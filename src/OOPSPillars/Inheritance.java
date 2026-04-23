@@ -1,16 +1,16 @@
-// ===========  Key Concepts ===========
-// Inheritance
-// single Inheritance (support java)
+package OOPSPillars;// ===========  Key Concepts ===========
+// OOPSPillars.Inheritance
+// single OOPSPillars.Inheritance (support java)
 
 // =========== Next Topic =============
 //multilevel inheritance (support java)
 
 
 /*
-Inheritance - one child class or subclass can use data or properties and method from inherited class.
+OOPSPillars.Inheritance - one child class or subclass can use data or properties and method from inherited class.
               like the parent all method and properties can use the child class
 
-Single Inheritance - the one child class inherits only one parent class
+Single OOPSPillars.Inheritance - the one child class inherits only one parent class
 */
 
 // ======== Diagram =========
@@ -33,7 +33,7 @@ class Parents { // parent class
     }
 
     public void getFatherNameAndId(){
-        System.out.println("Father Name and Id  : " + father + " " + fatherId);
+        System.out.println("OOPSPillars.Father Name and Id  : " + father + " " + fatherId);
     }
 }
 

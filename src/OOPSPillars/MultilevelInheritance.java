@@ -1,11 +1,11 @@
-// ===========  Key Concepts ===========
-// multilevel Inheritance (support java)
+package OOPSPillars;// ===========  Key Concepts ===========
+// multilevel OOPSPillars.Inheritance (support java)
 
 // =========== Next Topic =============
 // hierarchical inheritance (support java)
 
 /*
-multilevel Inheritance
+multilevel OOPSPillars.Inheritance
         - Multilevel inheritance in Java means one class inherits from another class,
         and that class inherits from a third class, forming a chain like A -> B -> C.
 */
@@ -25,7 +25,7 @@ class GrandFather { // class A
     private String grandFather = "periyakarupan P";
 
     public void getGrandFatherNameAndId(){
-        System.out.println("Grand Father Name and Id  : " + grandFather + " " + grandFatherId);
+        System.out.println("Grand OOPSPillars.Father Name and Id  : " + grandFather + " " + grandFatherId);
     }
 }
 
@@ -34,7 +34,7 @@ class Father extends GrandFather { // class B
     private String FatherName  = "Andikkalai A";
 
     public void getFatherNameAndId() {
-        System.out.println(" Father Name And ID : "+ FatherName + " " + FatherName);
+        System.out.println(" OOPSPillars.Father Name And ID : "+ FatherName + " " + FatherName);
     }
 }
 
@@ -60,6 +60,6 @@ public class MultilevelInheritance {
         chl2.getGrandFatherNameAndId();
 //        chl2.getGrandChildNameAndId();  ( if your initialize with grandfather and reference class name grandchild
 //                                  you can't to access the getGrandChildNameAndId() method.
-//                                  because the GrandFather class not inherits any class )
+//                                  because the OOPSPillars.GrandFather class not inherits any class )
     }
 }

@@ -1,4 +1,4 @@
-// ============= key concepts =============
+package OOPSPillars;// ============= key concepts =============
 // interface and implements
 // multiple inheritance
 
@@ -94,11 +94,11 @@ class Child implements Dad ,Mom {
 public class MultipleInheritance {
     public static void main(String arg[]){
          /*
-         Dad d = new Dad();
-            1. new Dad() is invalid
-            2. Dad is an interface, so you cannot create an object of it.
+         OOPSPillars.Dad d = new OOPSPillars.Dad();
+            1. new OOPSPillars.Dad() is invalid
+            2. OOPSPillars.Dad is an interface, so you cannot create an object of it.
          correct:
-            1. Dad d = new Child();
+            1. OOPSPillars.Dad d = new OOPSPillars.Child();
          */
 
         Dad d = new Child(); // you can only access on dad class methods

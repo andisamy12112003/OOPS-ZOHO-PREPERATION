@@ -1,10 +1,18 @@
 package SolidPrinciple;
 
-// use this video for SOLID principle- https://youtu.be/8x7-IlibqeQ?si=2kd0b5jB86DJ8kBx
 /*
 
-flowchart TB
+use this video for SOLID principle- https://youtu.be/8x7-IlibqeQ?si=2kd0b5jB86DJ8kBx
 
+================== key concepts ==================
+SRP - single responsible Principle
+
+================== next topic ====================
+OSP - open close principle
+
+
+
+flowchart TB
     S [S - Single Responsibility Principle<br/>One class = one job]
     O [O - Open/Closed Principle<br/>Open for extension, closed for modification]
     L [L - Liskov Substitution Principle<br/>Child class should replace parent class]
@@ -19,7 +27,7 @@ flowchart TB
 * Open/Closed Principle          : software entities should be open for extension but closed for modification.
 
 * Liskov Substitution Principle  : derived classes should be replaceable with their base classes
-                                    without breaking behavior.
+                                   without breaking behavior.
 
 * Interface Segregation Principle: avoid forcing classes to depend on methods they do not use.
 

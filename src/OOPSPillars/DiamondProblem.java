@@ -1,9 +1,9 @@
-/*
+package OOPSPillars;/*
 ========================== key concepts ==========================
 Diamond problem
 
 ========================== next topic ==========================
-Polymorphism
+OOPSPillars.Polymorphism
 
 Diamond Problem:
            The diamond problem is the ambiguity that happens when a class inherits
@@ -11,11 +11,11 @@ Diamond Problem:
 
 ================== diagram ======================
 
-                   A(class)
+                   OOPSPillars.A(class)
                      / \
-         B(interface)   C(interface)
+         OOPSPillars.B(interface)   OOPSPillars.C(interface)
                      \ /
-             D(class D extends or inherit A class and implements B, C class)
+             OOPSPillars.D(class OOPSPillars.D extends or inherit OOPSPillars.A class and implements OOPSPillars.B, OOPSPillars.C class)
 
 Example in Java :
         Java does not allow multiple inheritance of classes,
@@ -28,7 +28,7 @@ that have the same default method:
 
 class A {
     void printA(){
-        System.out.println("A");
+        System.out.println("OOPSPillars.A");
     }
 }
 
@@ -43,7 +43,7 @@ interface C {
 class D extends A implements B,C{
     @Override
     public void printA(){
-        System.out.println("D");
+        System.out.println("OOPSPillars.D");
     }
 }
 

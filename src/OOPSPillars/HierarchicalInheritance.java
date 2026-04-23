@@ -1,4 +1,4 @@
-// ============== key concepts =============
+package OOPSPillars;// ============== key concepts =============
 // Hierarchical inheritance
 
 // ============== next topic ===============
@@ -24,7 +24,7 @@
 
 class Animal {
     void eat(){
-        System.out.println("Animal is eats...");
+        System.out.println("OOPSPillars.Animal is eats...");
     }
 }
 

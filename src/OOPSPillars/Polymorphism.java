@@ -1,10 +1,10 @@
-/*
+package OOPSPillars;/*
 ================== key concepts ==========================
 polymorphism
 types - runtime(method overriding) , compile time(method overloading)
 
 ================= next topic ==========================
-Polymorphism1 - compile time(method overloading)
+OOPSPillars.Polymorphism1 - compile time(method overloading)
 
 ==================== Runtime(Method overriding) ========================
         **This uses method overriding, where the child class provides its own version of the parent method

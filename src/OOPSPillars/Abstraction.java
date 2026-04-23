@@ -1,15 +1,15 @@
-/*
+package OOPSPillars;/*
 ========================= key concepts =====================
-Abstraction
+OOPSPillars.Abstraction
 
 ======================= next topic ========================
+go to SOLID principle package SRP class file
 
-
-Abstraction:
-Abstraction means showing only the important features and hiding the internal details.
+OOPSPillars.Abstraction:
+OOPSPillars.Abstraction means showing only the important features and hiding the internal details.
 In Java, it answers the question: what should an object do?
 
-Example: A Car has start() and stop() methods, but you do not need
+Example: OOPSPillars.A OOPSPillars.Car has start() and stop() methods, but you do not need
 to know the engine’s internal working to use it. That is abstraction.
 
 Abstract inheritance :

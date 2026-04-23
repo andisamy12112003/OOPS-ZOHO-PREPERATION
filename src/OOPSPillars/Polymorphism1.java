@@ -1,9 +1,9 @@
-/*
+package OOPSPillars;/*
 ==================== key concepts ============================
-Polymorphism1 - compile time(method overloading)
+OOPSPillars.Polymorphism1 - compile time(method overloading)
 
 ==================== next topic ===========================
-Abstraction
+OOPSPillars.Abstraction
 
 ========================== compile time ( method overloading) ===========================
       ****This uses method overloading, where the method name is the same but the parameters are different
@@ -14,7 +14,7 @@ Abstraction
       Decision time	                     Compile time                   Runtime
      Achieved by	                 Method overloading             Method overriding
         Binding	                      Early/static binding          Late/dynamic binding
-     Inheritance needed	                  Not necessary                  Required
+     OOPSPillars.Inheritance needed	                  Not necessary                  Required
     =========================================================================================
 
  */
