@@ -351,3 +351,47 @@ super() → parent class constructor.
 Interview line
 ==============
 “super is used in a child class to refer to its immediate parent class members and constructor”.
+
+
+9. Concrete class
+==================
+
+class Bike {
+    void ride() {
+        System.out.println("Bike is riding");
+    }
+
+    void brake() {
+        System.out.println("Bike is stopping");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bike b = new Bike();
+        b.ride();
+        b.brake();
+    }
+}
+
+Explanation
+============
+Bike is a concrete class because it has full method implementations.
+
+You can create an object using new Bike().
+
+It is not abstract, so it is complete and usable directly.
+
+Easy meaning
+============
+A concrete class is a normal class that is fully implemented and can be instantiated.
+
+Simple memory trick
+====================
+Abstract class = incomplete blueprint.
+
+Concrete class = complete class with working methods.
+
+Interview line
+==============
+“A concrete class is a class that has implementations for all methods and can be directly instantiated.”
