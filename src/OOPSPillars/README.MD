@@ -26,6 +26,7 @@ core concepts
 
 8.super keyword - To call parent class constructor using super()
 
+9.concrete class - A concrete class is a normal class that is fully implemented and can be              instantiated.
 
 PILLAR OF OPPS 
 ==============
