@@ -5,8 +5,7 @@ package SolidPrinciple;
 ====================== key concepts ======================
 DIP - Dependency Inversion Principle
 
-====================== next topic =====================
-
+====================== next topic ========================
 
 
 Dependency Inversion Principle (DIP)
