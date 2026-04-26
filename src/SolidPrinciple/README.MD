@@ -1,4 +1,5 @@
-SOLID is a set of five design principles that help you write code that is easier to maintain, test, extend, and understand. In simple terms, it guides you to build software with less coupling and cleaner responsibilities.
+SOLID 
+ is a set of five design principles that help you write code that is easier to maintain, test, extend, and understand. In simple terms, it guides you to build software with less coupling and cleaner responsibilities.
 
 The five principles
 ===================
@@ -34,4 +35,45 @@ DIP: use interfaces, not concrete classes.
 One-line interview answer
 =========================
 “SOLID is a group of five OOP principles used to make software more maintainable, flexible, and scalable: SRP, OCP, LSP, ISP, and DIP”.
+
+
+concrete
+========
+A concrete class is a normal Java class that is fully implemented, so you can create objects from it using new.
+
+Simple idea 
+===========
+It has implementations for all methods.
+
+It is not abstract.
+
+You can instantiate it directly.
+ 
+
+
+class Bike {
+    void ride() {
+        System.out.println("Bike is riding");
+    }
+
+    void brake() {
+        System.out.println("Bike is stopping");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bike b = new Bike();
+        b.ride();
+        b.brake();
+    }
+}
+
+Why this is concrete
+=====================
+Bike has complete method bodies.
+
+No method is left unimplemented.
+
+So Bike is a concrete class.
 

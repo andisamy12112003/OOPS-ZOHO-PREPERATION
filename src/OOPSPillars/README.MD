@@ -28,6 +28,10 @@ core concepts
 
 9.concrete class - A concrete class is a normal class that is fully implemented and can be              instantiated.
 
+10.compile time - code is checked and converted.
+
+11.run time - the program starts running and doing work.
+
 PILLAR OF OPPS 
 ==============
 
@@ -42,3 +46,10 @@ PILLAR OF OPPS
     1.runtime (method overriding)
     2.complie time (method overloading)
 4.Abstract 
+
+• Class: template.
+• Object: real instance.
+• Encapsulation: data hiding.
+• Inheritance: reuse parent code.
+• Polymorphism: one name, many forms.
+• Abstraction: focus on what, not how.

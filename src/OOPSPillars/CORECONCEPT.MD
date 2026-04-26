@@ -394,4 +394,48 @@ Concrete class = complete class with working methods.
 
 Interview line
 ==============
-“A concrete class is a class that has implementations for all methods and can be directly instantiated.”
+“A concrete class is a class that has implementations for all methods and can be directly instantiated.” 
+
+
+Compile time:
+=============
+     is when your code is translated before running, and 
+run time:
+=========
+     is when the program is actually executing.
+
+Simple meaning
+==============
+Compile time: code is checked and converted.
+=============
+Run time: the program starts running and doing work.
+=========
+
+Example:
+========
+If you write:
+
+java
+====
+int a = 10
+
+This gives a compile-time error because the semicolon is missing.
+
+If you write:
+============
+java
+====
+int b = 10 / 0;
+
+This may compile, but it fails at run time because division by zero is not allowed.
+
+Easy difference
+===============
+
+Compile time = before execution.
+
+Run time = during execution.
+
+Interview line
+==============
+“Compile time is the stage where the source code is checked and translated, while run time is the stage where the program actually runs and errors appear during execution”.
