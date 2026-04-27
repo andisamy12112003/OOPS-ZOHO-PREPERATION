@@ -31,9 +31,9 @@ Multiple inheritance concept at the bottom with G
 ====================== diagram ==============================
 
                       OOPSPillars.Animal
-                     /      \
+                     /                  \
                   OOPSPillars.Dog        OOPSPillars.Tiger
-                  |            |
+                  |                         |
                  OOPSPillars.Pet          OOPSPillars.Wild
 
 Why this is hybrid:

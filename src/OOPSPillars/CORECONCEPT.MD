@@ -207,7 +207,7 @@ Simple interview line
 class Department {
     String deptName;
     Student student;
-
+    
     Department(String deptName, Student student) {
         this.deptName = deptName;
         this.student = student;
@@ -348,6 +348,29 @@ super.sound() → parent class method.
 
 super() → parent class constructor.
 
+class Animal {
+Animal() {
+System.out.println("Animal is created");
+}
+}
+
+class Dog extends Animal {
+Dog() {
+super();
+System.out.println("Dog is created");
+}
+
+
+}
+
+class PRACTICEPLACE{
+public static void main(String[] args) {
+Dog d = new Dog();
+}
+}
+
+// the constructor special method is automatically called.
+
 Interview line
 ==============
 “super is used in a child class to refer to its immediate parent class members and constructor”.
@@ -375,7 +398,7 @@ public class Main {
 }
 
 Explanation
-============
+===========
 Bike is a concrete class because it has full method implementations.
 
 You can create an object using new Bike().
@@ -438,4 +461,21 @@ Run time = during execution.
 
 Interview line
 ==============
-“Compile time is the stage where the source code is checked and translated, while run time is the stage where the program actually runs and errors appear during execution”.
+“Compile time is the stage where the source code is checked and translated, while run 
+time is the stage where the program actually runs and errors appear during execution”.
+
+Compile time
+============
+Happens before the program starts running.
+
+The compiler checks syntax, types, and other rules.
+
+Example: missing semicolon, undeclared variable, or type mismatch.
+
+Runtime
+=======
+Happens while the program is running.
+
+The program is already executing in memory.
+
+Example: divide by zero, null reference, or file not found during execution.

@@ -8,6 +8,7 @@ package OOPSPillars;// ===========  Key Concepts ===========
 multilevel OOPSPillars.Inheritance
         - Multilevel inheritance in Java means one class inherits from another class,
         and that class inherits from a third class, forming a chain like A -> B -> C.
+       which class is you will define in object creation that class and inherited class is given all inside methods and properties .
 */
 
 // ============= Diagram ================
@@ -58,7 +59,7 @@ public class MultilevelInheritance {
 
         GrandFather chl2 = new GrandChild();
         chl2.getGrandFatherNameAndId();
-//        chl2.getGrandChildNameAndId();  ( if your initialize with grandfather and reference class name grandchild
+//        chl2.getGrandChildNameAndId();  ( if your initialize with grandfather and reference class name grandchild 
 //                                  you can't to access the getGrandChildNameAndId() method.
 //                                  because the OOPSPillars.GrandFather class not inherits any class )
     }

@@ -6,7 +6,8 @@ package OOPSPillars;// ============== key concepts =============
 
 /*
 
-    Hierarchical inheritance -
+    Hierarchical inheritance
+    ========================
     In Java means multiple child classes inherit from
     the same parent class. It is useful when several classes share common features,
     but each also has its own special behaviour.

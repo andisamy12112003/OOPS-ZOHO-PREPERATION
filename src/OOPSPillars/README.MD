@@ -12,7 +12,6 @@ core concepts
     3.protected 
     4.default   
 
-
 7.object relationships
     1.association 
         1.Unidirectional association: one object knows about the other, but not vice versa
@@ -26,7 +25,7 @@ core concepts
 
 8.super keyword - To call parent class constructor using super()
 
-9.concrete class - A concrete class is a normal class that is fully implemented and can be              instantiated.
+9.concrete class - A concrete class is a normal class that is fully implemented and can be instantiated.
 
 10.compile time - code is checked and converted.
 
