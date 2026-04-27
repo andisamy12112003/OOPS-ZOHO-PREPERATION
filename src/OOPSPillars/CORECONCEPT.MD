@@ -22,6 +22,8 @@ It sets initial values for the object.
 
 It helps make the object ready to use.
 
+In Java, an instance variable is a variable declared within a class but outside of any method, constructor, or block. Because each object (instance) of the class maintains its own unique copy of these variables, the values stored in them can differ from one object to another
+
 
 2.this - keyword 
 ================
