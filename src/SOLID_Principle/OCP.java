@@ -1,4 +1,4 @@
-package SolidPrinciple;
+package SOLID_Principle;
 
 /*
     ====================== key concepts =======================
@@ -94,6 +94,7 @@ public class OCP {
     public static void main(String[] args){
         Rectangle rec = new Rectangle(123.34,323.32);
         Circle cir = new Circle(123.3);
+
         ShapeCalculator shape = new ShapeCalculator();
 
         double recArea = shape.calculateArea(rec);

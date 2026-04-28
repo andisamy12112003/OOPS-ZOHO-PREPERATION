@@ -1,4 +1,4 @@
-package SolidPrinciple;
+package SOLID_Principle;
 
 /*
 
@@ -50,18 +50,22 @@ public class Main {
 
 
 Why this violates LSP
+====================
 Penguin cannot behave like a normal Bird with fly(), so replacing
 Bird with Penguin breaks expected behavior.
 
 Correct code
 ============
 Why this follows LSP
+====================
 Now only birds that can fly implement Flyable, so Penguin is no longer forced into a behavior it cannot support.
 
 Easy memory trick
+=================
 Bad design: Bird has fly(), but not all birds can fly.
 
 Good design: separate Flyable for flying birds, and keep Bird for common behavior like eat()
+
  */
 
 class Bird {

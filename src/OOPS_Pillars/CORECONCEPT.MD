@@ -481,3 +481,395 @@ Happens while the program is running.
 The program is already executing in memory.
 
 Example: divide by zero, null reference, or file not found during execution.
+
+
+object Declaration inside the class two types
+=============================================
+Wrong code
+==========
+class Student {
+String name;
+int age;
+
+    Student(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display(){
+        System.out.println(name+ " "+ age);
+    }
+}
+
+class PrintStudent{
+private Student stu;
+void print(Student stu){
+return stu.display();
+}
+}
+
+public class PRACTICEPLACE{
+public static void main(){
+Student stu1 = new Student("Andisamy A",21);
+}
+} find error
+
+
+Explaination
+============
+There are a few compile errors in your code.
+
+Errors
+======
+return stu.display(); is wrong.
+
+display() returns void, so you cannot return it.
+
+Use just stu.display();
+
+public static void main() is incomplete.
+
+Java main method should be:
+
+java
+=====
+public static void main(String[] args)
+
+You create stu1, but you never use it.
+
+You should pass it to print().
+
+private Student stu; inside PrintStudent is not being used.
+
+It is not an error, but it is unnecessary in your current code.
+
+Corrected code
+==============
+class Student {
+String name;
+int age;
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display() {
+        System.out.println(name + " " + age);
+    }
+}
+
+class PrintStudent {
+void print(Student stu) {
+stu.display();
+}
+}
+
+public class PRACTICEPLACE {
+public static void main(String[] args) {
+Student stu1 = new Student("Andisamy A", 21);
+PrintStudent ps = new PrintStudent();
+ps.print(stu1);
+}
+}
+
+Second type
+===========
+wrong code
+==========
+
+class Student {
+String name;
+int age;
+
+    Student(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display(){
+        System.out.println(name+ " "+ age);
+    }
+}
+
+class PrintStudent{
+private Student stu;
+void print(){
+stu.display();
+}
+}
+
+
+public class PRACTICEPLACE{
+public static void main(){
+Student stu1 = new Student("Andisamy A",21);
+
+        PrintStudent pr = new PrintStudent();
+        pr.print();
+    }
+} 
+
+
+Errors
+======
+stu is never initialized in PrintStudent.
+
+You declared private Student stu;, but you never assigned a Student object to it.
+
+So this line:
+=============
+java
+====
+stu.display();
+will cause a NullPointerException at runtime.
+
+main() method signature is wrong.
+
+It should be:
+=============
+java
+====
+public static void main(String[] args)
+not:
+====
+java
+====
+public static void main()
+
+
+correct code:
+=============
+class Student {
+String name;
+int age;
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display() {
+        System.out.println(name + " " + age);
+    }
+}
+
+class PrintStudent {
+private Student stu;
+
+    PrintStudent(Student stu) {
+        this.stu = stu;
+    }
+
+    void print() {
+        stu.display();
+    }
+}
+
+public class PRACTICEPLACE {
+public static void main(String[] args) {
+Student stu1 = new Student("Andisamy A", 21);
+
+        PrintStudent pr = new PrintStudent(stu1);
+        pr.print();
+    }
+} 
+
+
+Simple reason
+=============
+stu1 is created in main.
+
+You must pass stu1 into PrintStudent.
+
+Then print() can call stu.display() safely.
+
+
+Your code shows an aggregation relationship, which is a has-a relationship.
+
+Why aggregation
+===============
+PrintStudent has a Student object as a field: private Student stu;.
+
+The Student object is created outside PrintStudent and passed in from main.
+
+That means PrintStudent uses the Student object, but it does not own its creation.
+
+In your code
+============
+java
+====
+class PrintStudent {
+private Student stu;
+}
+
+This means:
+===========
+PrintStudent has a Student.
+
+The Student object can exist independently of PrintStudent.
+
+So this is aggregation, not composition.
+
+Easy way to remember
+====================
+Composition: strong ownership, part cannot live without whole.
+
+Aggregation: weak ownership, part can live independently.
+
+In your program, stu1 is created in main, then given to PrintStudent, so the relationship is aggregation.
+
+
+Composition is a strong has-a / part-of relationship where one object owns another object and the child cannot live independently.
+==================================================================================================================================
+Simple example
+=============
+java
+====
+class Engine {
+void start() {
+System.out.println("Engine started");
+}
+}
+
+class Car {
+private Engine engine;
+
+    Car() {
+        engine = new Engine();
+    }
+
+    void drive() {
+        engine.start();
+        System.out.println("Car is moving");
+    }
+}
+
+public class Main {
+public static void main(String[] args) {
+Car c = new Car();
+c.drive();
+}
+}
+
+Why this is composition
+=======================
+Car creates and owns Engine.
+
+Engine is part of Car.
+
+If the Car object is gone, the Engine inside it is also gone, so their lifecycles are tied.
+
+Easy memory trick
+=================
+Aggregation = weak has-a, child can live separately.
+
+Composition = strong has-a, child depends on parent.
+
+
+In Java OOP, casting means converting one type of reference to another compatible type.
+=======================================================================================
+Types of casting
+================
+Widening casting: smaller type to larger type, done automatically.
+
+Narrowing casting: larger type to smaller type, done manually with a cast.
+
+Object casting in OOP
+=====================
+For objects, casting usually means upcasting and downcasting.
+
+Upcasting
+=========
+java
+====
+   Bird b = new Sparrow();
+   Sparrow object is stored in a Bird reference.
+
+This is automatic.
+
+You can use only parent-class members through that reference.
+
+Downcasting
+===========
+java
+====
+   Sparrow s = (Sparrow) b;
+   Converts parent reference back to child type.
+
+This is explicit.
+================
+It should be used only when the actual object is really a Sparrow, or it may throw ClassCastException.
+
+Simple example
+==============
+java
+====
+class Animal {
+void eat() {
+System.out.println("Eating");
+}
+}
+
+class Dog extends Animal {
+void bark() {
+System.out.println("Barking");
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+
+Animal a = new Dog();   // upcasting
+a.eat();
+
+Dog d = (Dog) a;        // downcasting
+d.bark();
+
+    }
+}
+
+Easy meaning
+============
+Upcasting = child to parent.
+
+Downcasting = parent to child.
+
+Upcasting is safe and automatic.
+=========
+Downcasting needs care and may fail if the object is not really that child type.
+===========
+In Java OOP, implicit means Java does something automatically, while explicit means you do it manually yourself.
+
+Simple difference
+=================
+Implicit: done automatically by Java/JVM/compiler.
+
+Explicit: written clearly by the programmer using code or casting syntax.
+
+In casting
+==========
+Implicit casting happens automatically, usually from smaller type to larger type, like int to double.
+
+Explicit casting needs a manual cast, like (int) 10.5, because Java will not do it by itself.
+
+In OOP terms
+============
+Implicit upcasting:
+===================
+java
+====
+Animal a = new Dog();
+Java allows this automatically.
+
+Explicit downcasting:
+=====================
+java
+====
+Dog d = (Dog) a;
+You must write (Dog) yourself.
+
+Easy memory trick
+=================
+Implicit = automatic
+Explicit = manual
+

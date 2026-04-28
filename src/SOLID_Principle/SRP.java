@@ -1,4 +1,4 @@
-package SolidPrinciple;
+package SOLID_Principle;
 
 /*
 
@@ -35,6 +35,8 @@ flowchart TB
 
 
 1) Code that violates SRP
+=========================
+
 class UserService {
     public void registerUser(String name, String email) {
         // 1. Validating user input
@@ -54,6 +56,8 @@ class UserService {
 }
 
 Why this violates SRP
+=====================
+
 This class is doing three jobs:
 
 validating input,
@@ -66,6 +70,7 @@ So if email logic changes, database logic changes, or validation rules change, y
 
 
 2) Code that follows SRP
+========================
 
  */
 
@@ -116,11 +121,12 @@ class UserRegistrationService {
     private EmailService emailService = new EmailService();
 
     public void registerUser(String name, String email) {
-        validator.validate(name, email);
 
+        validator.validate(name, email);
         User user = new User(name, email);
         repository.save(user);
         emailService.sendWelcomeEmail(user);
+
     }
 }
 

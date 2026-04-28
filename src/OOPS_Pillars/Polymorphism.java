@@ -1,4 +1,4 @@
-package OOPSPillars;/*
+package OOPS_Pillars;/*
 ================== key concepts ==========================
 polymorphism
 types - runtime(method overriding) , compile time(method overloading)

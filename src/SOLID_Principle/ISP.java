@@ -1,4 +1,4 @@
-package SolidPrinciple;
+package SOLID_Principle;
 /*
 
 ===================== key concepts ====================
@@ -53,7 +53,7 @@ unnecessary methods and UnsupportedOperationException problems.
 
 
 2) Code that follows ISP
-
+========================
 Why this follows ISP
 Now each class implements only the interfaces it actually needs.
 No class is forced to depend on extra methods that it does not use.

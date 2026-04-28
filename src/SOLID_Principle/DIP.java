@@ -1,4 +1,4 @@
-package SolidPrinciple;
+package SOLID_Principle;
 
 /*
 
@@ -15,6 +15,7 @@ Dependency Inversion Principle (DIP)
  both should depend on abstractions.
 
 1) Code that violates DIP
+=========================
 
 class MySQLDatabase {
     public void connect() {
@@ -44,6 +45,7 @@ public class DIPViolation {
 
 
 Why this violates DIP
+=====================
 DatabaseService depends directly on MySQLDatabase, so it is tightly coupled to one concrete class.
 If you want to use PostgreSQL or Oracle, you must change the service class.
 
@@ -51,9 +53,11 @@ If you want to use PostgreSQL or Oracle, you must change the service class.
 ========================
 
 Why this follows DIP
+====================
 DatabaseService now depends on the Database interface, not on a concrete database class. This makes the code flexible, reusable, and easier to test.
 
 3) Easy understanding
+=====================
 Violation: high-level class creates or depends on a specific low-level class.
 
 Correct: high-level class depends on an interface, and concrete classes implement that interface.

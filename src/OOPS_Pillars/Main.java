@@ -1,4 +1,4 @@
-package OOPSPillars;
+package OOPS_Pillars;
 // ======  Key concepts  ========
 
 // class
