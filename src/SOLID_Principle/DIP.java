@@ -6,7 +6,7 @@ package SOLID_Principle;
 DIP - Dependency Inversion Principle
 
 ====================== next topic ========================
-
+go next DesignPattern package
 
 Dependency Inversion Principle (DIP)
 ====================================

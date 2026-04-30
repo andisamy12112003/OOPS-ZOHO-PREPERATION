@@ -31,6 +31,9 @@ core concepts
 
 11.run time - the program starts running and doing work.
 
+12. static ,final , static final
+
+
 PILLAR OF OPPS 
 ==============
 

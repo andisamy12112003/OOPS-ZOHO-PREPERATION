@@ -873,3 +873,37 @@ Easy memory trick
 Implicit = automatic
 Explicit = manual
 
+static
+======
+
+Used for class-level variables, methods, blocks, and nested classes.
+
+One shared copy exists for the whole class.
+
+Commonly used when a value or method should be the same for all objects.
+
+final
+=====
+For a variable, it cannot be reassigned after initialization.
+
+For a method, it cannot be overridden.
+
+For a class, it cannot be extended.
+
+static final
+============
+
+Used to create constants.
+
+The value is shared by all objects and cannot change.
+
+Example: static final double PI = 3.14159;
+
+Easy memory trick
+=================
+
+static = shared by class.
+
+final = cannot change.
+
+static final = shared constant.
